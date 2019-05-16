@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>
+        <%= title %>
+    </title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <form method="post" action="/user/register">
+
+        <div class="user-email">
+            <label for="email">
+                <i class="am-icon-envelope-o"></i>
+            </label>
+            <input type="email" name="username" id="username" placeholder="请输入账号">
+        </div>
+        <div class="user-pass">
+            <label for="password">
+                <i class="am-icon-lock"></i>
+            </label>
+            <input type="password" name="passwd" id="passwd" placeholder="设置密码">
+        </div>
+        <div class="user-pass">
+            <label for="passwordRepeat">
+                <i class="am-icon-lock"></i>
+            </label>
+            <input type="text" name="mobile" id="mobile" placeholder="设置手机号">
+        </div>
+
+    </form>
+
+    <div class="login-links">
+        <label for="reader-me">
+            <input id="reader-me" type="checkbox"> 点击表示您同意商城《服务协议》
+        </label>
+    </div>
+    <div class="am-cf">
+        <input type="submit" name="" id="reg" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl">
+    </div>
+</body>
+
+</html>
